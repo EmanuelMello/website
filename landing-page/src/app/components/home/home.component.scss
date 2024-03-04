@@ -1,0 +1,51 @@
+@import "../../../color-variables.scss"; 
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $primary-background;
+
+    font-family: "Roboto", sans-serif;
+
+
+    // border: 10px solid red;
+    margin: 30px;
+
+
+
+    padding: 0 70px;
+
+    .list {
+        margin-left: 20px;
+    }
+
+
+    span {
+        font-size: 18px;
+        font-weight: 700;
+        color: $secondary-text;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 900;
+        color: $primary-text;
+        margin-bottom: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 30px;
+        align: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-section{
+        flex-direction: row;
+    }
+
+}
